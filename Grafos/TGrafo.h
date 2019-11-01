@@ -90,7 +90,7 @@ void TGrafo::RemVertice(int _id){
 
    i = 0;
    while ((v1 != nullptr) and (!achou)){
-      if (v1->getinfo().getid() == _id) achou = true;
+      if (v1->getIdLinha() == _id) achou = true;
       else{
          ++i;
          v1 = v1->getprox();
@@ -100,7 +100,7 @@ void TGrafo::RemVertice(int _id){
    if (v1 != nullptr){
       for (j = 0; j < ordem; ++j){
          if (v1 == v2) continue;
-         while(v2->getinfo().Rem_Aresta(_id)) --dimensao;
+         while(v2->getIdLinha().Rem_Aresta(_id)) --dimensao;
          v2 = v2->getprox();
       }
       dimensao -= v1->getinfo().getLArestas()->size();

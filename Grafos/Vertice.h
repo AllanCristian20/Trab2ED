@@ -63,7 +63,7 @@ bool Vertice::Rem_Aresta (int _id){
    bool achou = false;
 
    while ((p != nullptr) && (!achou)){
-      if (p->getinfo().getid_dest() == _id) achou = true;
+      if (p->getIdLinha() == _id) achou = true;
       else {
          p = p->getprox();
          ++i;

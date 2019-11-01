@@ -8,7 +8,7 @@ int main(){
 
    G = new TGrafo();
    G->settipo(true); //Grafo orientado
-   cout << "Adicionando vertice A: " << G->AddVertice("Vertice A") << endl;
+   cout << "Adicionando vertice A: " << G->AddVertice(1,293.301605,293.301605,0.000000,188859.709932,8253809.082146,188905.046973,8253520.080854)<< endl;
    cout << "Adicionando vertice B: " << G->AddVertice("Vertice B") << endl;
    cout << "Adicionando vertice C: " << G->AddVertice("Vertice C") << endl;
    cout << "Adicionando vertice D: " << G->AddVertice("Vertice D") << endl;
